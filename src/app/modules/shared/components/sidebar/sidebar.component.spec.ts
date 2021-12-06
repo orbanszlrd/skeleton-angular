@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideMockStore } from '@ngrx/store/testing';
+import { PrimeModule } from 'src/app/modules/prime/prime.module';
 
 import { SidebarComponent } from './sidebar.component';
 
@@ -6,11 +8,14 @@ describe('SidebarComponent', () => {
   let component: SidebarComponent;
   let fixture: ComponentFixture<SidebarComponent>;
 
+  const initialState = { app: { isLoading: true, showSidebar: false } };
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SidebarComponent ]
-    })
-    .compileComponents();
+      imports: [PrimeModule],
+      declarations: [SidebarComponent],
+      providers: [provideMockStore({ initialState })],
+    }).compileComponents();
   });
 
   beforeEach(() => {
