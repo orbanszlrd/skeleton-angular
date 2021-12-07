@@ -11,9 +11,13 @@ import { FooterComponent } from './modules/shared/components/footer/footer.compo
 import { LoaderComponent } from './modules/shared/components/loader/loader.component';
 import { SidebarComponent } from './modules/shared/components/sidebar/sidebar.component';
 import { PrimeModule } from './modules/prime/prime.module';
+import { AppModule } from './app.module';
+import { Store } from '@ngrx/store';
 
 describe('AppComponent', () => {
   const initialState = {};
+
+  let store: Store;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -28,11 +32,25 @@ describe('AppComponent', () => {
         LoaderComponent,
       ],
     }).compileComponents();
+
+    store = TestBed.inject(Store);
+
+    spyOn(store, 'dispatch');
   });
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
+  });
+
+  it('should hide  the  sidebar', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    app.hideSidebar();
+
+    fixture.detectChanges();
+
+    expect(store.dispatch).toHaveBeenCalledTimes(1);
   });
 });
