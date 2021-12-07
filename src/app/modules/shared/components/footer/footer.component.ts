@@ -13,7 +13,7 @@ import {
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
   faFacebook = faFacebook;
   faInstagramSquare = faInstagramSquare;
   faTwitter = faTwitter;
@@ -21,6 +21,4 @@ export class FooterComponent implements OnInit {
   faGithub = faGithub;
 
   constructor() {}
-
-  ngOnInit(): void {}
 }

@@ -8,12 +8,10 @@ import * as AppActions from '../../../../store/actions/app.actions';
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.scss'],
 })
-export class ToolbarComponent implements OnInit {
+export class ToolbarComponent {
   constructor(private store: Store) {}
 
   toggleSidebar() {
     this.store.dispatch(AppActions.toggleSidebar());
   }
-
-  ngOnInit(): void {}
 }
