@@ -1,4 +1,4 @@
-name: Install, build and test CI
+name: GitHub Actions CI
 
 on:
   push:
