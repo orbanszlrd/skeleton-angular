@@ -1,6 +1,6 @@
 # Skeleton for Angular Applications
 
-[![codecov](https://codecov.io/gh/orbanszlrd/skeleton.angular.app/branch/main/graph/badge.svg?token=3E0D3E83HK)](https://codecov.io/gh/orbanszlrd/skeleton.angular.app)
+[![codecov](https://codecov.io/gh/orbanszlrd/skeleton.angular.app/branch/development/graph/badge.svg?token=3E0D3E83HK)](https://codecov.io/gh/orbanszlrd/skeleton.angular.app)
 
 ### Description
 
