@@ -1,5 +1,6 @@
 # Skeleton for Angular Applications
 
+[![GitHub Actions CI](https://github.com/orbanszlrd/skeleton.angular.app/actions/workflows/development.yml/badge.svg)](https://github.com/orbanszlrd/skeleton.angular.app/actions/workflows/development.yml)
 [![codecov](https://codecov.io/gh/orbanszlrd/skeleton.angular.app/branch/development/graph/badge.svg?token=3E0D3E83HK)](https://codecov.io/gh/orbanszlrd/skeleton.angular.app)
 
 ### Description
